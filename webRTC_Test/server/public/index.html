@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webRTC</title>
+   
+</head>
+<body>
+    webRTC
+
+
+    <div class="videoContainer">
+
+        <!-- getUserMedia Test -->
+        <video id="gum-local" autoplay playsinline></video>
+
+        <button id="showVideo">Open camera</button>
+
+        <!--------------------- Peer To Peer------------------------------------>
+        <video id="localVideo" playsinline autoplay muted></video>
+
+        <video id="remoteVideo" playsinline autoplay></video>
+
+        <div class="box">
+            <button id="startButton">Start</button>
+            <button id="callButton">Call</button>
+            <button id="hangupButton">Hang Up</button>
+        </div>
+        <!-- ---------------------peer to peer-------------------------------- -->
+
+    </div>
+
+    <script src="main.js" ></script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+   
+</body>
+
+</html>
